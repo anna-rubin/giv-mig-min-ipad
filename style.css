@@ -24,11 +24,12 @@ body {
     linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .55)),
     url("background.jpg");
   background-repeat: repeat;
-  background-position: center top;
-  background-size: 220px auto;
+  background-position: center top, 0 0;
+  background-size: 100% 100%, 220px auto;
   cursor: crosshair;
   font-family: 'Press Start 2P', monospace;
   overflow-x: hidden;
+  animation: backgroundPow 8s steps(9, end) infinite alternate;
 }
 
 a,
@@ -337,6 +338,32 @@ footer p {
   }
 }
 
+@keyframes backgroundPow {
+  0% {
+    background-position: center top, 0 0;
+  }
+
+  18% {
+    background-position: center top, 36px -18px;
+  }
+
+  36% {
+    background-position: center top, 72px 24px;
+  }
+
+  54% {
+    background-position: center top, 24px 54px;
+  }
+
+  72% {
+    background-position: center top, -42px 20px;
+  }
+
+  100% {
+    background-position: center top, -88px -34px;
+  }
+}
+
 @media (max-width: 680px) {
   .desktop-shell {
     padding-top: 14px;
@@ -351,5 +378,11 @@ footer p {
     align-items: flex-start;
     flex-direction: column;
     gap: 5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
   }
 }
