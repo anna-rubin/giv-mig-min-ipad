@@ -281,6 +281,19 @@ button {
   background: var(--win-gray);
 }
 
+footer {
+  width: min(98vw, 1240px);
+  margin: 18px auto 14px;
+  color: rgba(255, 255, 255, .55);
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  text-align: right;
+}
+
+footer p {
+  margin: 0;
+}
+
 @keyframes blink {
   0%,
   48% {
