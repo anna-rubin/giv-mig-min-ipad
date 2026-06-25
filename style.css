@@ -280,6 +280,10 @@ button {
   background: var(--win-gray);
 }
 
+.credit {
+  opacity: .42;
+}
+
 @keyframes blink {
   0%,
   48% {
