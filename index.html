@@ -1,31 +1,89 @@
 <!doctype html>
-<html>
+<html lang="da">
 <head>
   <meta charset="utf-8" />
-  <title>giv mig min ipad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giv Mig Min iPad Nu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="crt"></div>
 
-  <div class="overlay">
+  <main class="desktop-shell">
+    <nav class="top-links" aria-label="Links">
+      <a href="https://open.spotify.com/artist/1wcnSvUv3l6ZKV1HcjJI3j?si=UP7Bbs9dR-SuNyLkHa4AzQ" target="_blank" rel="noreferrer" data-glitch="[ SPOTIFY ]">
+        [ SPOTIFY ]
+      </a>
 
+      <a href="https://www.youtube.com/watch?v=Cdv3PfIBnHQ" target="_blank" rel="noreferrer" data-glitch="[ YOUTUBE ]">
+        [ YOUTUBE ]
+      </a>
+
+      <a href="https://www.instagram.com/farmanderdygtig?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer" data-glitch="[ INSTAGRAM ]">
+        [ INSTAGRAM ]
+      </a>
+    </nav>
+
+    <section class="internet-window" aria-label="Giv Mig Min iPad Nu video">
+      <div class="window-titlebar">
+        <span>GIV-MIG-MIN-IPAD-NU.EXE</span>
+        <div class="window-buttons" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="window-toolbar">
+        <span>File</span>
+        <span>Edit</span>
+        <span>View</span>
+        <span>Help</span>
+      </div>
+
+      <div class="ticker">
+        <marquee scrollamount="7">*** FARMAND ER DYGTIG *** GIV MIG MIN IPAD NU *** CLICK PLAY *** 2026 INTERNET ART MODE ***</marquee>
+      </div>
+
+      <div class="video-wrapper">
+        <div class="video-cover" id="videoCover">
+          <img
+            src="https://img.youtube.com/vi/Cdv3PfIBnHQ/maxresdefault.jpg"
+            alt="Farmand - Giv Mig Min iPad Nu">
+
+          <button class="play-button" id="playVideo" aria-label="Afspil video">
+            <span>PLAY</span>
+            <strong>▶</strong>
+          </button>
+        </div>
+      </div>
+
+      <div class="status-bar">
+        <span>Ready</span>
+        <span>iPad signal: 100%</span>
+      </div>
+    </section>
+  </main>
+
+  <script>
+  document
+    .getElementById("playVideo")
+    .addEventListener("click", function() {
+      document
+        .getElementById("videoCover")
+        .outerHTML =
+  `
   <iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/Cdv3PfIBnHQ"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  src="https://www.youtube-nocookie.com/embed/Cdv3PfIBnHQ?autoplay=1&rel=0&modestbranding=1"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen>
-</iframe>
-
-    <div class="links">
-      <a href="https://open.spotify.com/artist/1wcnSvUv3l6ZKV1HcjJI3j?si=7DTckZoFRkaBbCCZ1mVMrw" target="_blank">Spotify</a>
-      <a href="https://www.instagram.com/farmanderdygtig/" target="_blank">Instagram</a>
-    </div>
-
-  </div>
-
+  </iframe>
+  `;
+    });
+  </script>
 </body>
 </html>
