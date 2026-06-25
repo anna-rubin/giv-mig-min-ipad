@@ -1,7 +1,10 @@
 body {
   margin: 0;
   height: 100vh;
-  background: url("background.jpg") center/cover no-repeat;
+  background-image: url("background.jpg");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: 20% auto;
   display: flex;
   justify-content: center;
   align-items: center;
